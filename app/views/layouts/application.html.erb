@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TwoFactorAuthenticationExample</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<hr />
+<% if signed_in? %>
+  <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Login', new_user_session_path %><br><br>
+  Generate default users with <pre>rake db:seed</pre>
+  Default credentials is: <i>test@test.com</i>, password: <i>12345678</i>.<br>
+  Please, check one time password in console, example (it's not valid now):
+  <pre>>>>>>>>>>>>>>>> otp_secret_key: 3gkgicz2n7mlbjlu, otp_code: 261739</pre>
+<% end %>
+
+</body>
+</html>

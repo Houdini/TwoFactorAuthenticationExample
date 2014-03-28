@@ -1,0 +1,2 @@
+module InnerPageControllerHelper
+end

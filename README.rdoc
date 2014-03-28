@@ -1,0 +1,7 @@
+## Two factor authentication example
+
+## Install and run
+
+    bundle install
+    rake db:create db:migrate db:seed
+    rails s
