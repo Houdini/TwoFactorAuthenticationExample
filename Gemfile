@@ -7,7 +7,7 @@ gem 'rails', '4.0.3'
 gem 'sqlite3'
 
 gem 'devise'
-gem 'two_factor_authentication', path: '/Users/houdini/Dropbox/my_ruby/two_factor_authentication'
+gem 'two_factor_authentication'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
